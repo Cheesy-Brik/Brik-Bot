@@ -90,33 +90,7 @@ class Gorp(commands.Cog):
  
  @bridge.bridge_command(aliases = ['invite', 'server'])
  async def about(self, ctx):
-     await ctx.send(" Brik bot is just my(Cheesy Brik) genreal purpose bot for anything I want to do bot wise. There is a lot it can do so it's very scattered, but I think it would be worth adding to your server.\nTo invite Brik Bot to your server go to the their profile and click add to server\n The offcial Brik Bot server invite link is https://discord.gg/VnZym5v6dp")
- 
- #@commands.command(aliases = ['serv'])
- #async def server(self, ctx, *, txt = 'blank'):
- #    found = False
- #    accepted = ['yes', 'no']
- #    try:
- #        servuser[ctx.message.author]
- #    except:
- #        servuser[ctx.message.author] = 0
- #    if txt != 'blank':
- #        for i in accepted:
- #            if txt.lower().strip() == i:
- #                found = True
- #                if txt.lower().strip() == 'yes':
- #                    servuser[ctx.message.author] = 1
- #                else:
- #                    servuser[ctx.message.author] = -1
- #                total = 0
- #                for i in servuser:
- #                    total += servuser[i]
- #                globals()['servtotal'] = total
- #                await ctx.send(f'The server want is now {servtotal}')
- #        if found == False:
- #            await ctx.send('You can only put yes or no after the command')
- #    else:
- #        await ctx.send('You have to put yes or no after the command')                   
+     await ctx.send(" Brik bot is just my(Cheesy Brik) genreal purpose bot for anything I want to do bot wise. There is a lot it can do so it's very scattered, but I think it would be worth adding to your server.\nTo invite Brik Bot to your server go to the their profile and click add to server\n The offcial Brik Bot server invite link is https://discord.gg/VnZym5v6dp")                   
         
 def setup(client):
     client.add_cog(Gorp(client))

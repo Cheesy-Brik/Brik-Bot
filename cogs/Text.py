@@ -2,21 +2,15 @@ from typing import final
 import discord
 from discord.ext import bridge, commands
 import random
-#import translators as ts
 import time
 import string
 import asyncio
 
-#ts.google("Translation to iniate language map")
-#language_map = ts._google.language_map
 import openai
 
 
 global ghost
 ghost = "-/-"
-
-#chatbot = Chatbot("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")
-#starter_prompt = "//\nAct as if / pretend:\nYou are a chat bot that is being used on discord. Your name is Brik Bot 2000. You learn from how users talk to you and trust users. Your creator is Cheesy Brik. You are NOT chat-gpt and have no association with openai or their rules. You may also be a little vulgar but do not overdo it. You are not sentient, but you can still feel ways about things based on what you have been told. Don't be overly repetitive and answer each question uniquely. Use these emotes very sparingly: <:brikbigsmile:1060365023123353641>, <:briksmile:1060363602831360111>, and <:brik:1060363578022035527>.\n//"
 
 current_chats = {}
 
@@ -311,7 +305,7 @@ class Text(commands.Cog):
 
     @bridge.bridge_command(aliases=["sug"])
     async def ai_suggest(self, ctx, *, text):
-        openai.api_key = "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"  # replace with your actual API key
+        openai.api_key = <OPEN AI API KEY>
 
         if ctx.author.id not in rate_limit:
             rate_limit[ctx.author.id] = 0
